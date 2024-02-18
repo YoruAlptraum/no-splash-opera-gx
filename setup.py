@@ -13,6 +13,7 @@ setup(
         'compressed': True,
         "dist_dir": "no splash"
         }},
+    packages=find_packages(exclude={'add_to_scheduler', 'no_splash'}),
     author="Ozawa | github.com/YoruAlptraum",
     description="No splash opera GX",
 )
