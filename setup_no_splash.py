@@ -3,15 +3,15 @@ import py2exe
 
 setup(
     windows=[{
-        "script":"add_to_scheduler.py",
-        'dest_base': 'set_scheduler',
+        "script":"no_splash.py",
+        'dest_base': 'no_splash',
         'company_name': 'YoruAlptraum',
         'version': '1.0.0'
         }],
     options = {"py2exe": {
-        'bundle_files': 3,
+        'bundle_files': 1,
         'compressed': True,
-        "dist_dir": "no splash"
+        "dist_dir": "exec"
         }},
     packages=find_packages(exclude={'add_to_scheduler', 'no_splash'}),
     author="Ozawa | github.com/YoruAlptraum",
