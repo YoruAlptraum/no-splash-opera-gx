@@ -11,6 +11,17 @@ for /d %%a in ("%directory%\*") do (
     ) 
 )
 
-del "%latest%\opera_gx_splash.exe"
+set "result="
+if exist "%latest%\opera_gx_splash.exe" (
+    del "%latest%\opera_gx_splash.exe"
+    set "result=File deleted"
+) else (
+    set "result=File not present"
+)
+
+echo %TIME% - %latest% - %result% >> "%~dp0task_monitoring.log"
+
+@rem launch opera gx
+"%userprofile%\AppData\Local\Programs\Opera GX\launcher.exe"
 
 exit /b 0
