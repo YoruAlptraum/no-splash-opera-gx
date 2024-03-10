@@ -8,11 +8,11 @@ This app will automatically delete it for you when starting opera gx
 
 - Download the zip from the releases page and extract it
 - Move the extracted folder were you want to leave it, the setup will use the current location of the file so if you move it later you will need to run the setup script again
-- On the extracted folder run the `proxy_shortcut.vbs` and that's it
+- On the extracted folder run the `setup.vbs` and that's it
 
 # How does this work
 
-Running `proxy_shortcut.vbs` will replace the target of the opera shortcuts on windows taskbar and on start menu with the `no_splash.exe` path. The exe will run a script to delete `opera_gx_splash.exe` before opening opera gx, preventing it from starting the splash animation
+Running `setup.vbs` will replace the target of the opera shortcuts on windows taskbar and on start menu with the `no_splash.exe` path. The exe will run a script to delete `opera_gx_splash.exe` before opening opera gx, preventing it from starting the splash animation
 
 I recomend placing the extracted file on the opera gx folder `%userprofile%\appdata\local\programs\Opera GX`. Since the script path will replace the script path, placing the extracted folder on the opera gx folder will make it easier to access the app file location
 
