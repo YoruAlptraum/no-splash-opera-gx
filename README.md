@@ -4,6 +4,10 @@ Usually the splash screen on startup can only be completely prevented when delet
 
 This app will automatically delete it for you when starting the browser
 
+# Video demonstrating how to setup the script
+
+[![Video demonstration](https://img.youtube.com/vi/sddz6n7kdP8/0.jpg)](https://www.youtube.com/watch?v=sddz6n7kdP8)
+
 # How to set up No Splash
 
 - Download the zip from the releases page and extract it
