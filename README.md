@@ -2,7 +2,7 @@
 
 Usually the splash screen on startup can only be completely prevented when deleting the splash exe file on browser local folder and this needs to be done every time the browser updates
 
-This app will automatically delete it for you when starting the browser
+This script will automatically delete it for you when starting the browser
 
 # Video demonstrating how to setup the script
 
@@ -11,20 +11,16 @@ This app will automatically delete it for you when starting the browser
 # How to set up No Splash
 
 - Download the zip from the releases page and extract it
-- Move the extracted folder were you want to leave it, the setup will use the current location of the file so if you move it later you will need to run the setup script again
+- Move the extracted folder to the Opera GX folder, the default location is `%userprofile%\AppData\Local\Programs\Opera GX`
+- Pin Opera GX to your taskbar (if you don't have it already pinned)
 - On the extracted folder run the `setup.vbs` and that's it
 
 # How does this work
 
-Running setup.vbs will replace the target of the opera GX shortcuts in the windows taskbar and start menu with the no_splash.exe path.
+Running setup.vbs will replace the target of the opera GX shortcuts in the windows taskbar and start menu with the `run_no_splash.vbs` path
 
-The exe will run a script to delete opera_gx_splash.exe before opening Opera GX, preventing it from starting the splash animation
+The script will run `no_splash.bat` script to delete `opera_gx_splash.exe` before opening Opera GX, preventing it from starting the splash animation
 
-I recommend placing the extracted file on the Opera GX folder %userprofile%\appdata\local\programs\Opera GX. Since the script path will replace the launcher, placing the extracted folder on the Opera GX folder will make it easier to access the app file location
+You need to have Opera GX pinned to your taskbar before running `setup.vbs` to avoid issues as the script will replace the path on the current shortcut
 
-# Converting the bat to exe
-
-To conver the bat to exe you just need to drag your bat on top of the `converter.bat` script
-
-I use the converter script from https://stackoverflow.com/a/51104332/15975589
-
+If you encounter any issues with the script feel free to let me know
