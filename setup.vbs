@@ -22,6 +22,8 @@ shortcut.WorkingDirectory = curDir
 shortcut.IconLocation = iconpath
 shortcut.Save
 
+sh.Popup "No Splash setup completed", 0, "No Splash Setup", vbOKOnly
+
 Set sh = Nothing
 Set shortcut = Nothing
 Set sysObj = Nothing
